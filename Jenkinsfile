@@ -18,9 +18,9 @@ pipeline{
             steps{
                 sshagent(['ssh-key']) {
                    sh """
-                   scp -o StrictHostKeyChecking=no target/DemoProject.war ubuntu@65.2.172.191:/home/ubuntu/apache-tomcat-9.0.79/webapps
-                   ssh ubuntu@65.2.172.191:/home/ubuntu/apache-tomcat-9.0.79/bin/shutdown.sh
-                   ssh ubuntu@65.2.172.191:/home/ubuntu/apache-tomcat-9.0.79/bin/startup.sh
+                   scp -o StrictHostKeyChecking=no target/DemoProject.war ubuntu@43.205.178.54:/home/ubuntu/apache-tomcat-9.0.79/webapps
+                   ssh ubuntu@43.205.178.54:/home/ubuntu/apache-tomcat-9.0.79/bin/shutdown.sh
+                   ssh ubuntu@43.205.178.54:/home/ubuntu/apache-tomcat-9.0.79/bin/startup.sh
                    """
                 }
             }
