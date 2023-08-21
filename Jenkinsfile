@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    def IpAddr= "172.31.39.111"
+    def IpAddr= "43.205.242.137"
     tools{
         maven "Maven-3.9.2"
     }
